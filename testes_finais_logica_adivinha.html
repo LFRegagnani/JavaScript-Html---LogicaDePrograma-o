@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+<h1><big> BEM VINDO AO JOGO DE ADIVINHAÇÃO INTELIGENTE DO LUIZ </big></h1>
+<br><br>
+1 - Para jogar é muito simples, tente adivinhar um dos números de 1 a 10 que o computador está pensando. <br><br>
+
+2 - Preencha aqui o seu chute
+
+<input>
+
+<button> CLIQUE AQUI PARA VER O RESULTADO</button>
+
+
+<script>
+
+var input = document.querySelector("input");
+var botão = document.querySelector("button");
+input.focus();
+
+
+
+//pensando no número
+
+
+function pensa(vezes){
+	
+	return Math.round(Math.random()*10);
+}
+
+var codigos = pensa(3);
+
+var codigos = []
+
+	
+//parametros de checagem
+
+
+
+
+
+
+
+//calculo final em baixo
+
+botão.onclick = adivinhando
+
+function adivinhando(){
+
+	if(codigos[posição] == input.value){
+
+		alert("Você acertou!! um dos números pensados realmente era esse!")
+
+	}else{
+
+		alert("que pena, você errou, tente novamente!");
+		input.value = "";
+		input.focus();
+	}
+}
+
+
+</script>

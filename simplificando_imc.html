@@ -1,0 +1,64 @@
+<meta charset="UTC-8">
+
+
+
+
+
+
+
+
+<script>
+
+function pulaLinha() {
+
+	document.write("<br><hr><br>")
+}
+
+
+
+
+alert("Olá, essa é a calculadora de IMC do Luiz, preencha corretamente seus dados para saber se você está em forma!!!!");
+var nome = prompt("Por favor informe seu nome");
+var altura = prompt("Muito bem " + nome + " agora informe sua altura aproximada (use ponto entre metro e centimetro)");
+var peso = prompt("Pronto " + nome + " agora só falta informar o seu peso em quilos, prometo que não vou contar para ninguem... kkkk" );
+
+
+	function imc(peso, altura) {
+	return peso/(altura*altura);
+	
+}
+
+document.write("<big>Muito bem " + nome + " segundo nossos calculos precisos validados pela OMS, o seu IMC é exatamente <h1> " + imc(peso,altura) + " </h1> Seu resultado é....</big>")
+
+if(imc(peso,altura)<18.5){
+	pulaLinha()
+	document.write("<big>Seu resultado foi menor que: <h1>18.5</h1>... você precisa dar uma engordadinha rsrs... É serio!</big>");
+}
+
+if(imc(peso,altura)>=18.5 && imc(peso,altura)<=24.9){
+	
+	pulaLinha()
+	document.write("<big>Seu resultado foi entre: <h1>18.5 e 24.9</h1> seu peso está OTIMO PARABENS!!!</big>");
+}
+
+if(imc(peso,altura)>=25 && imc(peso,altura)<=29.9){
+
+	pulaLinha()
+	document.write("<big>Seu resultado foi entre: <h1>25.0 e 29.9</h1> é melhor dar uma segurada na alimentação ai meu camarada, você está com SOBREPESO</big>");
+	}
+
+
+if(imc(peso,altura)>=30 && imc(peso,altura)<=39.9){
+	pulaLinha()
+	document.write("<big>Seu resultado foi entre: <h1>30.0 e 40.0</h1> comece a dieta amanha! você já é considerado OBESO(A)!</big>");
+	}
+
+
+if(imc(peso,altura)>40){
+	pulaLinha()
+	document.write("<big>Seu resultado foi maior que: <h1>40</h1>... ai meu amigo, procure um personal, um medico ou um pai de santo, mas faça alguma coisa, a sua é OBESIDADE GRAVE!!!!</big>");
+}
+
+
+
+</script>

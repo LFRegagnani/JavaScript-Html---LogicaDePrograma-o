@@ -1,0 +1,11 @@
+<br> pula linha
+<h1> Destaca negrito as palavras à frente
+</h1> termina os destaques em negrito
+<a> para colocar uma ancora
+href= é seguido de um link entre aspas
+
+
+
+
+
+

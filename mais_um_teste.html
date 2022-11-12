@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+
+<input/>
+
+<button>Clique aqui para replicar o conteúdo da caixa</button>
+
+
+
+<script>
+
+function pulaLinha(){
+
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+var caixa = document.querySelector("input");
+var botão = document.querySelector("button")
+
+
+
+	function replica(){
+		alert(caixa.value)
+
+	}
+
+	botão.onclick = replica
+
+
+
+
+
+
+
+
+
+
+</script>

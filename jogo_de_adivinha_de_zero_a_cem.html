@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+	document.write("<br> <br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+}
+
+function sorteia(n){
+	return Math.round(Math.random()*n);
+}
+
+	var chute = prompt("tente adivinhar o número que o computador está pensando ");
+	var numeroPensado = sorteia(100);
+
+if(chute == numeroPensado){
+	mostra("Uau!!!   CERTA A RESPOSTA!" + " O número pensado foi realmente " + numeroPensado)
+
+}else{
+	if(chute>numeroPensado){
+		mostra("Errou!! O número era " + numeroPensado + " seu chute foi maior que o número pensado pelo computador. ")
+
+	}else{
+		mostra("Errou!! O número era " + numeroPensado + " seu chute foi menor que o número pensado pelo computador.")
+	}
+
+}
+
+
+</script>

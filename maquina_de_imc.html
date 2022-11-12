@@ -1,0 +1,46 @@
+<meta charset="UTC-8">
+
+<script>
+
+function pulaLinha() {
+
+	document.write("<br><hr><br>")
+}
+
+
+
+
+alert("Olá, essa é a calculadora de IMC do Luiz, preencha corretamente seus dados para saber se você está em forma!!!!");
+var nome = prompt("Por favor informe seu nome");
+var altura = prompt("Muito bem " + nome + " agora informe sua altura aproximada: Exemplo 1.80");
+var peso = prompt("Pronto " + nome + " agora só falta informar o seu peso em quilos, prometo que não vou contar para ninguem... kkkk" );
+
+
+
+	var resultado = peso/(altura*altura);
+	
+
+
+document.write("<big>Muito bem " + nome + " segundo nossos calculos precisos validados pela nasa, o seu IMC é aproximadamente <h1> " + Math.round(resultado) + " </h1>compare o resultado com nossa tabela à baixo para saber mais!</big>")
+
+pulaLinha()
+document.write("<big>Se seu resultado foi menor que: <h1>18,5</h1>... você precisa dar uma engordadinha rsrs... É serio!</big>");
+pulaLinha()
+document.write("<big>Se seu resultado foi entre: <h1>18,5 e 24,9</h1> seu peso está OTIMO PARABENS!!!</big>");
+pulaLinha()
+document.write("<big>Se seu resultado foi entre: <h1>25,0 e 29,9</h1> é melhor dar uma segurada na alimentação ai meu camarada, você está com SOBREPESO</big>");
+pulaLinha()
+document.write("<big>Se seu resultado foi entre: <h1>30,0 e 40,0</h1> comece a dieta amanha! você já é considerado OBESO(A)!</big>");
+pulaLinha()
+document.write("<big>Se seu resultado foi meior que: <h1>40</h1>... ai meu amigo, procure um personal, um medico ou um pai de santo, mas faça alguma coisa, a sua é OBESIDADE GRAVE!!!!</big>");
+
+
+
+
+
+
+
+
+
+
+</script>

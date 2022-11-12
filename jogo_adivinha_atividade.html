@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+
+var x = 10;
+var numeroPensado = Math.round(Math.random()*x);
+var tentativa = 1
+alert("Olá! você terá três tentativas para adivinhar o número pensado pelo computador de 0 à " + x)
+
+while(tentativa <=3){
+
+	
+	var chute = parseInt(prompt("Digite seu chute! "));
+
+	if(chute == numeroPensado){
+
+	mostra("<hr>Meu Deus!!! Por acaso você é a mãe Dinah? Você acertou! realmente o número pensado era " + numeroPensado);
+	break
+	
+	}else{ 
+
+	alert("Que pena, você errou!");
+	tentativa = tentativa + 1
+	
+
+	}
+}
+
+if (numeroPensado != chute){
+
+	mostra("<hr>Que pena, você errou as três tentativas! O número pensado era " + numeroPensado);
+
+	mostra("atualize a pagina para tentar novamente")
+}
+
+
+mostra("FIM")
+
+
+</script>

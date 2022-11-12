@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var x = 10
+var numeroPensado = Math.round(Math.random()*x)
+	var tenta = "S"
+	var tenta = "N"
+var chute = prompt("Tente adivinhar o número de 0 à " + x + " pensado pelo computador");
+
+if(chute == numeroPensado){
+	mostra("Você acertou!!!! o número pensado realmente era " + numeroPensado);
+}else{
+
+while(chute != numeroPensado){
+	alert("Que pena... você errou, o número pensado era " + numeroPensado);
+
+	var tenta = prompt("Quer tentar novamente? Responda S ou N maiusculo");
+	
+	if(tenta == "N") {
+
+		mostra("FIM... perdedor!")
+		chute = numeroPensado
+	}else{
+	
+		var numeroPensado = Math.round(Math.random()*x)
+
+		var chute = prompt("Tente adivinhar novamente o número de 0 à " + x + " obviamente o número mudou kkk");
+
+		if(chute == numeroPensado){
+	mostra("Você acertou!!!! o número pensado realmente era " + numeroPensado);
+		}else{
+	mostra("Que pena... você errou, o número pensado era " + numeroPensado);
+		}
+
+	}
+
+}
+	
+}
+
+
+
+mostra("FIM")
+
+
+</script>

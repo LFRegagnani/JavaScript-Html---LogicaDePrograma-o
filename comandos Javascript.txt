@@ -1,0 +1,10 @@
+
+O comando <meta charset="UTF-8"> serve para mostrar ao navegador que queremos que ele use os alfabetos tradicionais para interpretar os codigos adiante
+
+<script> sinaliza ao navegador que vamos começar a programar em java script (ESSE É UM COMANDO EM HTML)
+alert seguido das palavras entre aspas e parenteses é o sufficiente para criar um popup (sempre terminar com ponto e virgula)
+document.write() escrever sempre texto entre " e numeros sem.
+
+
+
+

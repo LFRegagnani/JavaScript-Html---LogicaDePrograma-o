@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+
+<big>BEM VINDO AO JOGO DE ADIVINHAÇÃO DE NÚMERO DO LUIZ!!!</big><br><br> 
+
+A regra é simples, o computador está pensando em um número de 0 a 10 e você tem 3 tentativas para adivinhar.
+<br><br>
+
+<input/>
+
+<button>Preencha o número ao lado e clique no botão para dar o seu chute</button>
+
+<script>
+
+function pulaLinha(){
+
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+
+var x = 10
+var caixa = document.querySelector("input");
+var botão = document.querySelector("button");
+var numeroPensado = Math.round(Math.random()*x)
+var tentativa = 1
+
+
+alert("Olá! tente adivinhar o número que o computador está pensando, ele vai de 0 à " + x)
+
+
+
+function gatilho(){
+
+if(caixa.value == numeroPensado){
+
+	alert("Você ACERTOU!!!!");
+	mostra("Uau... número pensado realmente era " + numeroPensado + " você é algum tipo de Mãe Dinah?");
+	
+
+	}else {
+
+	alert("Que pena você errou...");
+	caixa.value ="";
+	caixa.focus();
+
+	tentativa++
+
+		if(tentativa>=4){
+
+			mostra("<big>que pena, suas chances acabaram, o número pensado era " + numeroPensado +"</big><br><br><h1>Atualize a pagina para tentar novamente</h1>");
+		}
+
+
+	}
+
+}
+
+
+botão.onclick = gatilho
+
+
+
+
+
+
+
+
+</script>
